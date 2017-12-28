@@ -1,0 +1,90 @@
+@mixin header-theme($color, $bg-color, $border-color) {
+  /* stylelint-disable */
+  $the-bg:                   rgba($bg-color,.9) !default;
+  $the-color:                rgba($color,.5) !default;
+  $the-hover-color:          rgba($color,.7) !default;
+  $the-active-color:         rgba($color,.9) !default;;
+  $the-disabled-color:       rgba($color,.3) !default;
+  $the-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$the-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+  $the-toggler-border-color: rgba($color,.1) !default;
+  /* stylelint-enable */
+
+  .navbar {
+    background-color: $the-bg;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .navbar-brand {
+    color: $the-active-color;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $the-color;
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $the-active-color;
+    }
+  }
+
+  // maybe missing ... bootstrap navbar
+  // .navbar-text
+
+  .navbar-toggler {
+    border-color: $the-toggler-border-color;
+    color: $the-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $the-toggler-icon-bg;
+  }
+};
+
+header {
+  min-height: 3.5rem;
+
+  .brand-logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .brand-name {
+    height: 2rem;
+
+    span {
+      line-height: 2rem;
+      vertical-align: baseline;
+    }
+
+    span:nth-child(1) {
+      font-size: 1.65rem;
+      font-weight: 300;
+      text-transform: lowercase;
+    }
+
+    span:nth-child(2) {
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  // themeing color stuff
+  &.header-light {
+    @include header-theme($black, $gray-100, $primary);
+  }
+
+  &.header-dark {
+    @include header-theme($white, $gray-800, $primary);
+  }
+
+  &.header-primary {
+    @include header-theme($white, $primary, $gray-800);
+  }
+}
+
+
