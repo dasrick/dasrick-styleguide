@@ -1,4 +1,4 @@
 ---
-title: Header logo
-state: inprogress
+title: Header brand
+state: complete
 ---
