@@ -61,36 +61,6 @@
 header {
   min-height: 3.8rem;
 
-  .brand-logo {
-    height: 2rem;
-    width: 2rem;
-  }
-
-  .brand-name {
-    height: 2rem;
-
-    span {
-      line-height: 2rem;
-      vertical-align: sub;
-    }
-
-    span:nth-child(1) {
-      font-size: 1.65rem;
-      font-weight: 300;
-      text-transform: lowercase;
-    }
-
-    span:nth-child(2) {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-  }
-
-  .nav-link {
-    text-transform: uppercase;
-  }
-
   // themeing color stuff
   &.header-light {
     @include header-theme($black, $gray-100, $primary, 180);
@@ -103,4 +73,40 @@ header {
   &.header-primary {
     @include header-theme($white, $primary, $gray-800, 300);
   }
+}
+
+.navbar-brand {
+  .fa-stack {
+    font-size: .8em;
+  }
+}
+
+.brand-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.brand-name {
+  height: 2rem;
+
+  span {
+    line-height: 2rem;
+    vertical-align: sub;
+  }
+
+  span:nth-child(1) {
+    font-size: 1.65rem;
+    font-weight: 300;
+    text-transform: lowercase;
+  }
+
+  span:nth-child(2) {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.nav-link {
+  text-transform: uppercase;
 }
