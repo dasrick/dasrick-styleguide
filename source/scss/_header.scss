@@ -21,6 +21,10 @@
   .navbar-nav {
     .nav-link {
       color: $the-color;
+
+      @include hover-focus {
+        color: $the-hover-color;
+      }
     }
 
     .show > .nav-link,
@@ -71,6 +75,10 @@ header {
       font-weight: 700;
       text-transform: uppercase;
     }
+  }
+
+  .nav-link {
+    text-transform: uppercase;
   }
 
   // themeing color stuff
