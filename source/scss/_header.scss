@@ -75,6 +75,11 @@ header {
   &.header-primary {
     @include header-theme($white, $primary, $gray-800, 300);
   }
+
+
+  .nav-link {
+    text-transform: uppercase;
+  }
 }
 
 .navbar-brand {
@@ -117,6 +122,3 @@ header {
   }
 }
 
-.nav-link {
-  text-transform: uppercase;
-}

@@ -1,0 +1,30 @@
+footer {
+  color: $gray-600;
+  text-shadow: 0 -1px 0 $gray-900;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: $gray-400;
+    font-family: "Open Sans Condensed", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  a:hover {
+    color: lighten($primary, 15%);
+    text-decoration: none;
+  }
+}
