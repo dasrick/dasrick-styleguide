@@ -30,7 +30,7 @@
   "devDependencies": {
     "bootstrap": "^4.1.0",
     "bs-html-injector": "^3.0.0",
-    "dasrick-bootstrap": "^0.5.2",
+    "dasrick-bootstrap": "^0.6.0",
     "eslint": "^4.19.1",
     "grunt": "^1.0.2",
     "grunt-autoprefixer": "^3.0.4",
