@@ -5,8 +5,9 @@
 
 ***
 
-# dasrick-styleguide
-playground for styleguide of dasrick.de using patternlab
+# dasrick Styleguide
+
+... playground for styleguide of dasrick.de using patternlab ...
 
 ***
 
