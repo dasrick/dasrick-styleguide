@@ -1,0 +1,22 @@
+sudo: false
+dist: trusty
+language: node_js
+node_js:
+- '8'
+cache:
+  yarn: true
+  directories:
+  - "./node_modules"
+script:
+- echo "build styles and styleguide based on patternlab ..."
+- npm run build
+deploy:
+- provider: npm
+  skip_cleanup: true
+  email: "$NPM_EMAIL"
+  api_key:
+    secure: ne4mrTMsFgAo/7gFvQqoaXspyH93sFmLaj9xdTLT2O7Po1kL/i7fF4BKabYdfL75nsd2guTpaoaY6ZVFQdiOwNGyRmTO3cDY4fQeNWhEjcvWH1n3udWSG7qTPGGPyO033vnxHn1TBG2KvJ3gEeWyhIt1PavKh3SNZMU2QrkoilLX2UKF4hX2c075FH910+iOIzpffoyzvAcGJ/qwrLP5d9vqSaHz2PJo///bEvHlrM9xSeYDkrxOnW0kTkZA8sll34ugEGJzcFmc5Pbs2DE1cqWXU5jZamn1g2OrUOWugO4KwNSA1oCttAn8n3wPfN/xbZL5D4xNDUVWUEjcwAXWlFJCg3XtI1p7tqI/oAwwMgpbhKxvFTpdXSDF+62n6QlZuVzAwjr/hv3UU/ZAJS6qTKnNFpHygAmZXbuFs7YkYOBdkD5ujn5gjU+xUr259o2B3E4Ch6lti1DQE95gdEFMwvxR1ibP2GU7IJQkx17kszOBPKDPrbqII4SGNZyorvPPudvvGp5iY3Y99R0ZQAoYXBybp3aLz1iKx8NZOyTO9kyuyEFpF6aUWNWbPVRXWNTBQU1MKoxdrp4e6pFWXVDZt/kww5MHtuwCG/tzbECuRTc9fj1cYjvKO07YxGBXHXWB42+tVbfgInflHrkwOHtqsSZkRxVILnnFuD87l5DahQw=
+  on:
+    node: '8'
+    tags: true
+    repo: dasrick/dasrick-styleguide
