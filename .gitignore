@@ -1,5 +1,4 @@
 # Ignore web folder
-dist-*/
 node_modules/
 pattern_exports/
 public/

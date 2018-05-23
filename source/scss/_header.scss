@@ -1,3 +1,11 @@
+// from bootstrap
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+// end
 @mixin header-theme($color, $bg-color, $border-color, $rotation) {
   /* stylelint-disable */
   $the-bg: rgba($bg-color, .9) !default;

@@ -28,9 +28,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "bootstrap": "^4.1.0",
     "bs-html-injector": "^3.0.0",
-    "dasrick-bootstrap": "^0.7.0",
     "eslint": "^4.19.1",
     "grunt": "^1.0.2",
     "grunt-autoprefixer": "^3.0.4",
@@ -44,6 +42,7 @@
     "patternlab-node": "^2.9.3",
     "postcss": "^6.0.22",
     "postcss-sass": "^0.3.0",
+    "postcss-syntax": "^0.10.0",
     "styleguidekit-assets-default": "^3.5.2",
     "styleguidekit-mustache-default": "^3.1.0",
     "stylelint": "^9.2.0",
