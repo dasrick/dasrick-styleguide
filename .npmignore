@@ -1,0 +1,12 @@
+source/
+.editorconfig
+.eslintignore
+.eslintrc.json
+.idea
+.gitignore
+.npmignore
+.travis.yml
+Gruntfile.js
+package-lock.json
+patternlab-config.json
+yarn.lock
