@@ -3,13 +3,15 @@ dist: trusty
 language: node_js
 node_js:
 - '8'
+
 cache:
   yarn: true
   directories:
   - "./node_modules"
+
 script:
-- echo "build styles and styleguide based on patternlab ..."
-- npm run build
+  - npm run build
+
 deploy:
 - provider: npm
   skip_cleanup: true
